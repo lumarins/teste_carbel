@@ -9,16 +9,77 @@
     </head>
 
 
-    <body>
+    <body class="container-fluid">
+
+        <div class="form-fixo">
+            <div class="row form-title">
+                <div class="col-1">
+                    <i class="fas fa-phone-volume phone-call"></i>
+                </div>
+                <div class="col title-contact">
+                    <p class="title-form">Solicitar um</p>
+                    <p class="title-form2">CONTATO</p>
+                </div>
+            </div>
+
+            <div class="form-body">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1"><i class="fas fa-user"></i></span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Nome" aria-label="Nome" aria-describedby="basic-addon1">
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon2"><i class="fas fa-envelope"></i></span>
+                    </div>
+                    <input type="email" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon2">
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon3"><i class="fas fa-phone-alt"></i></span>
+                    </div>
+                    <input type="tel" class="form-control" placeholder="Telefone" aria-label="Telefone" aria-describedby="basic-addon3">
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <label class="input-group-text" for="inputGroupSelect01"><i class="far fa-clock"></i></label>
+                    </div>
+                    <select class="custom-select" id="inputGroupSelect01">
+                      <option selected>Escolha o horário</option>
+                      <option value="1">8:00</option>
+                      <option value="2">10:00</option>
+                      <option value="3">14:00</option>
+                    </select>
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <label class="input-group-text" for="inputGroupSelect02"><i class="fas fa-map-marker-alt"></i></label>
+                    </div>
+                    <select class="custom-select" id="inputGroupSelect02">
+                      <option selected>Escolha a unidade</option>
+                      <option value="1">Lourdes</option>
+                      <option value="2">Savassi</option>
+                      <option value="3">Centro</option>
+                    </select>
+                </div>
+                
+                <button class="btn btn-success">AGENDAR TEST DRIVE</button>
+            </div>
+        </div>
 
         <div class="container-fluid top_bar">
             <div class="row">
-                <div class="col-6 home">
+                <div class="col-6 col-md-6 col-sm-6 home">
                     <i id="icone_home" class="fas fa-home"></i>
                     <span>Ir para o Portal Banzai</span>
                 </div>
 
-                <div class="col-6 contact">
+                <div class="col-6 col-md-6 col-sm-6 contact">
                     <div class="col">
                         <i id="icone_marker" class="fas fa-map-marker-alt"></i>
                         <span>Encontre uma concessionária</span>
@@ -78,7 +139,7 @@
 
 
         <div class="container-fluid banner_2">
-            <img src="imagens/painel.jpg">
+            <img class="banner-md" src="imagens/painel.jpg">
         </div>
         <div class="container">
             <div class="row texto_banner">
@@ -112,6 +173,83 @@
                 <i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i>
             </div>
         </div>
+
+
+            <div class="container-fluid texto_3">
+                <div class="row">
+                    <label class="t3">PRONTO PARA TER UM HONDA?</label>
+                </div>
+                <div class="row">
+                    <label class="t4">Conheça os últimos grandes lançamentos da honda.</label>
+                </div>  
+
+                <div class="row modelos">
+                    <div class="col-2 opcao_1">
+                        <img id="img1" src="imagens/model-accord.png"><br />
+                        <img id="logo-1" src="./imagens/accord-logo.png">
+                        <label>Novo Honda Accord: a combinação perfeita de três atributos exigidos pelo consumidor: elegância, luxo e alto desempenho.</label>
+                        <button class="btn btn-outline-secondary">CONHEÇA MAIS</button>
+                    </div>
+
+                    <div class="col-2 opcao_2">
+                        <img id="img2" src="imagens/model-city.png"><br />
+                        <img id="logo-2" src="./imagens/model-logo-city.png">
+                        <label>O City está muito mais moderno e esportivo. Com design único e mais tecnológico do que nunca, ele vai conquistar todos os olhares.</label>
+                        <button class="btn btn-outline-secondary">CONHEÇA MAIS</button>
+                    </div>
+
+                    <div class="col-2 opcao_3">
+                        <img id="img3" src="imagens/model-fit.png"><br />
+                        <img id="logo-3" src="./imagens/model-logo-fit.png">
+                        <label>Com seu design inconfundível, o novo Honda Fit traz novidades que vão surpreender a todos e atrair ainda mais fãs.</label>
+                        <button class="btn btn-outline-secondary">CONHEÇA MAIS</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container-fluid footer">
+                <div class="row footer-1">
+                    <div class="col-3">
+                        <button class="btn-1">
+                            <i id="icone_marker" class="fas fa-map-marker-alt"></i>
+                            <span class="btn-txt-1">Encontre uma</span><br />
+                            <span class="btn-txt-2">CONCESSIONÁRIA</span>
+                        </button>
+                    </div>
+
+                    <div class="col-3">
+                        <button class="btn-2">
+                            <span class="btn2-txt-1">CENTRAL DE ATENDIMENTO</span><br />
+                            <span class="btn2-txt-2">(31) 3123-1234</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="row footer-2">
+                    <span>SIGA A BANZAI NAS REDES SOCIAIS</span>
+                </div>
+
+                <div class="container social">
+                    <div class="row footer-icons">
+                        <i class="fab fa-facebook-square fb-icon"></i>
+                        <i class="fab fa-instagram insta-icon"></i>
+                        <i class="fab fa-twitter-square tt-icon"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row footer-logos">
+                    <div class="col">
+                        <img id="banzai" src="./imagens/logo_banzai.svg">
+                    </div>
+                    <div class="col">
+                        <span>Todos juntos fazem um trânsito melhor</span>
+                        <img id="ibama" src="./imagens/logo-ibama.png">
+                    </div>
+                </div>
+            </div>
 
     </body>
 </html>

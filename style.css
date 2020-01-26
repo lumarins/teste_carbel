@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i&display=swap');
 
+.container-fluid {
+    padding: 0;
+}
+
 /*barra topo*/
 .top_bar {
     background-color: #EEEEEE;
@@ -60,21 +64,29 @@
     margin: 0;
 }
 
+.banner_principal, .banner-md {
+    width: 100%;
+}
+
 .selo {
     position: absolute;
-    top: 400px;
-    left: 300px;
+    top: 35%;
+    left: 8%;
     width: 20%;
 }
 
+.title-contact {
+    width: 100%;
+}
 
 
 
 /*conteudo 1*/
 
 .conteudo_1 {
-    margin-left: 150px !important;
-    margin-bottom: 50px !important;
+    /* margin-left: 150px !important;
+    margin-bottom: 50px !important; */
+    margin-top: 30px;
 }
 
 .miniaturas img {
@@ -90,14 +102,14 @@
     margin-top: 20px;
 }
 
-.destaque img {
+.destaque img {/*
     width: 55%;
     float: left !important;
-    margin-bottom: 30px;
+    margin-bottom: 30px;*/
 }
 
 .texto_1 {
-    font-size: 40px;
+    font-size: 1.5em;
     font-style: italic;
     color:#000;
 
@@ -128,26 +140,26 @@
 
 .texto_banner .t1 {
     position: absolute;
-    top: 1850px;
-    left: 100px;
+    top: 122%;
+    left: 6%;
     z-index: 5;
     font-size: 40px;
 }
 .texto_banner .t2 {
     position: absolute;
-    top: 1900px;
-    left: 100px;
+    top: 128%;
+    left: 6%;
     z-index: 5;
     font-size: 20px;
 }
 
 /*conteudo 2*/
 .conteudo_2 {
-    margin-left: 150px !important;
-    margin-bottom: 50px !important;
+    /* margin-left: 150px !important;
+    margin-bottom: 50px !important; */
 }
 .conteudo_2 img {
-    width: 300px;
+    width: 170%;
     display: flex;
     flex-direction: row;
     border: 1px solid #707070;
@@ -183,6 +195,7 @@
 }
 .carousel {
     margin: 30px !important;
+    margin-bottom: 5% !important;
 }
 .carousel i {
     display: flex;
@@ -196,5 +209,183 @@
     margin-left: 380px;
 }
 
+/*conteudo 3*/
 
+.texto_3 {
+    /* margin-left: 150px !important;
+    margin-bottom: 5% !important; */
+}
+
+.t3 {
+    color: #000;
+    font-size: 40px;
+    font-style: italic;
+
+}
+.t4 {
+    color: #000;
+    font-size: 20px;
+    font-style: italic;
+}
+
+
+.opcao_1, .opcao_2, .opcao_3 {
+    border: solid 1px #999;
+    padding: 25px;
+    text-align: center !important;
+    margin-right: 12px;
+    margin-bottom: 5%s;
+}
+
+.btn .btn-outline-secondary {
+    margin-bottom: 5px;
+}
+
+#img2, #img1, #img3 {
+    width: 55%;
+}
+#logo-2{
+    width: 45%;
+}
+#logo-3{
+    width: 40%;
+}
+#logo-1 {
+    width:55%;
+}
+
+/*footer*/
+
+.footer {
+    align-content: center;
+    margin-bottom: 1% !important;
+    background-color: #EEE;
+    width: 1366px;
+    height: 350px;
+}
+
+.btn-1 , .btn-2 { 
+    border: 1px solid #727B7A;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5%;
+    margin-top: 15%;
+}
+
+.btn-1 .btn-txt-2 {
+    color: #ff0000;
+    font-size: 24px;
+}
+
+.btn-2 .btn2-txt-2 {
+    color: #ff0000;
+    font-size: 28px;
+}
+
+.btn-1 .btn-txt-1 {
+    font-size: 20px;
+}
+
+.btn-1 #icone_marker {
+    color: #888;
+    font-size: 28px;
+    margin-right: 10px;
+}
+
+.btn-2 .btn2-txt-1 {
+    color: #727B7A;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.footer-1, .footer-2, .footer-3 {
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-2 span {
+    text-align: center;
+    font-size: 35px;
+    font-style: italic;
+    color:#000;
+    margin: 2% 0;
+}
+
+.footer-icons {
+    font-size: 60px;
+    color:#888;
+}
+
+.fb-icon, .insta-icon, .tt-icon {
+    text-align: center;
+    margin: 0 3%;
+}
+
+/* .social {
+    margin: 0 38% !important;
+} */
+
+.footer-logos #ibama {
+    width:10%;
+    position: relative;
+    top:-8%
+}
+
+.footer-logos #banzai {
+    width: 30%;
+}
+.footer-logos span {
+    color: #727B7A;
+}
+
+
+/*fomulário fixo*/
+
+.form-fixo {
+    position: fixed;
+    background-color: #EEE;
+    width: 27%;
+    height: 39%;
+    top: 25%;
+    right: 5%;
+    z-index: 10;
+    border-radius: 8px;
+}
+
+.form-title {
+    color: #444;
+    padding: 2%;
+    font-size: 18px;
+    position: relative;
+    left: 20%;
+    top: 3% !important;
+}
+
+.form-title p {
+    margin-bottom: 0;
+}
+
+.form-title .title-form {
+    margin: 0;
+}
+.form-title .title-form2 {
+    color:#ff0000;
+    font-size: 21px;
+}
+
+.phone-call {
+    font-size: 25px;
+    position: relative;
+    top: 18%;
+}
+
+.form-body {
+    padding: 5%;
+    align-content: center;
+    justify-content: center;
+}
+
+.btn-success {
+    margin-left: 19%;
+}
 
